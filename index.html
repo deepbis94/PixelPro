@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="description" content="PixelPro — pixel-perfect HTML/CSS conversion portfolio showcasing SaaS, ecommerce, and agency landing pages.">
+  <title>PixelPro — Pixel-Perfect Conversion Showcase</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="logo" href="index.html" aria-label="PixelPro home">
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span class="logo__text">PixelPro</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#demos">Demos</a></li>
+          <li><a class="nav__link" href="#craft">Craft</a></li>
+          <li><a class="nav__link nav__link--cta" href="#demos">View work</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero: brand-first composition -->
+    <section class="hero" aria-labelledby="hero-brand">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow" id="hero-brand">PixelPro</p>
+        <h1 class="hero__title">
+          Pixel-perfect HTML &amp; CSS,<br>
+          converted without compromise.
+        </h1>
+        <p class="hero__lede">
+          Three production-ready landing pages. Semantic markup, BEM, responsive grids, and accessible interactions — no frameworks.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#demos">Explore demos</a>
+          <a class="btn btn--ghost" href="#craft">See the craft</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo gallery -->
+    <section class="demos" id="demos" aria-labelledby="demos-heading">
+      <div class="section-head reveal">
+        <h2 class="section-head__title" id="demos-heading">Demo landings</h2>
+        <p class="section-head__text">Open any build to inspect structure, responsiveness, and interaction patterns.</p>
+      </div>
+
+      <ul class="demo-grid">
+        <li class="demo-card reveal">
+          <a class="demo-card__link" href="saas/index.html">
+            <div class="demo-card__preview">
+              <img class="demo-card__img" src="assets/hub/saas.jpg" alt="" width="600" height="400" loading="lazy" decoding="async">
+              <span class="demo-card__preview-label">Orbit</span>
+            </div>
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">SaaS Landing</h3>
+              <p class="demo-card__desc">Sticky nav, hamburger menu, gradient hero, features grid, pricing toggle, FAQ accordion.</p>
+              <span class="demo-card__cta">Open demo <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="demo-card reveal">
+          <a class="demo-card__link" href="ecommerce/index.html">
+            <div class="demo-card__preview">
+              <img class="demo-card__img" src="assets/hub/shop.jpg" alt="" width="600" height="400" loading="lazy" decoding="async">
+              <span class="demo-card__preview-label">Meridian</span>
+            </div>
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">Ecommerce Catalog</h3>
+              <p class="demo-card__desc">Eight products, sidebar filters, product modal, cart badge, 4→1 responsive grid.</p>
+              <span class="demo-card__cta">Open demo <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </li>
+
+        <li class="demo-card reveal">
+          <a class="demo-card__link" href="agency/index.html">
+            <div class="demo-card__preview">
+              <img class="demo-card__img" src="assets/hub/agency.jpg" alt="" width="600" height="400" loading="lazy" decoding="async">
+              <span class="demo-card__preview-label">Kline</span>
+            </div>
+            <div class="demo-card__body">
+              <h3 class="demo-card__title">Agency Portfolio</h3>
+              <p class="demo-card__desc">Dark theme, masonry grid, alternating sections, animated stats, contact form.</p>
+              <span class="demo-card__cta">Open demo <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Craft / technique strip -->
+    <section class="craft" id="craft" aria-labelledby="craft-heading">
+      <div class="craft__inner reveal">
+        <h2 class="craft__title" id="craft-heading">Built to inspect</h2>
+        <p class="craft__text">
+          Every demo uses semantic HTML5, CSS custom properties, Grid + Flexbox, BEM naming, Intersection Observer scroll reveals, and keyboard-accessible controls with visible focus states.
+        </p>
+        <ul class="craft__tags" aria-label="Techniques used">
+          <li class="craft__tag">Semantic HTML5</li>
+          <li class="craft__tag">CSS Variables</li>
+          <li class="craft__tag">Grid + Flexbox</li>
+          <li class="craft__tag">BEM</li>
+          <li class="craft__tag">ARIA</li>
+          <li class="craft__tag">Intersection Observer</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__brand">PixelPro</p>
+    <p class="site-footer__copy">&copy; 2026 PixelPro. Pure HTML5 / CSS3 / vanilla JS. Photos via <a href="https://unsplash.com" rel="noopener noreferrer">Unsplash</a>.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

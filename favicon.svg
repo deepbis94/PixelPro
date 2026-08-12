@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="PixelPro">
+  <rect width="32" height="32" rx="4" fill="#0b0f0c"/>
+  <!-- Pixel L-mark matching the hub logo -->
+  <rect x="6" y="6" width="10" height="10" fill="#b8f34a"/>
+  <rect x="18" y="6" width="8" height="10" fill="#7a9e2e"/>
+  <rect x="6" y="18" width="10" height="8" fill="#7a9e2e"/>
+</svg>
