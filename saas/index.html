@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Orbit — modern SaaS landing page demo by PixelPro.">
+  <title>Orbit — Ship faster. Stay in sync. | PixelPro Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky navbar -->
+  <header class="header" data-header>
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Orbit home">
+        <span class="logo__orb" aria-hidden="true"></span>
+        Orbit
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        data-nav-toggle
+      >
+        <span class="nav-toggle__label">Menu</span>
+        <span class="nav-toggle__icon" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <nav class="nav" id="primary-nav" data-nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#features">Features</a></li>
+          <li><a class="nav__link" href="#pricing">Pricing</a></li>
+          <li><a class="nav__link" href="#faq">FAQ</a></li>
+          <li><a class="nav__link nav__link--btn" href="#pricing">Start free</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero with gradient -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__brand">Orbit</p>
+        <h1 class="hero__title" id="hero-title">
+          Ship product updates without the chaos.
+        </h1>
+        <p class="hero__text">
+          One workspace for roadmaps, releases, and customer signals — so your team stays aligned from idea to launch.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#pricing">Start free trial</a>
+          <a class="btn btn--secondary" href="#features">See how it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features grid -->
+    <section class="features" id="features" aria-labelledby="features-title">
+      <div class="section-intro reveal">
+        <h2 class="section-intro__title" id="features-title">Built for product teams</h2>
+        <p class="section-intro__text">Everything you need between “we should” and “we shipped.”</p>
+      </div>
+
+      <ul class="features__grid">
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">◎</div>
+          <h3 class="feature__title">Living roadmaps</h3>
+          <p class="feature__text">Prioritize in public. Drag initiatives across quarters without losing context or owners.</p>
+        </li>
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">◇</div>
+          <h3 class="feature__title">Release trains</h3>
+          <p class="feature__text">Bundle changes, assign checklists, and notify stakeholders the moment you go live.</p>
+        </li>
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">▣</div>
+          <h3 class="feature__title">Signal inbox</h3>
+          <p class="feature__text">Pull feedback from Slack, Intercom, and support into themes your team can act on.</p>
+        </li>
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">△</div>
+          <h3 class="feature__title">Impact scores</h3>
+          <p class="feature__text">Weight effort against demand so the next sprint always has a clear why.</p>
+        </li>
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">⬡</div>
+          <h3 class="feature__title">Role-aware views</h3>
+          <p class="feature__text">Executives see outcomes. Engineers see work. Everyone sees the same source of truth.</p>
+        </li>
+        <li class="feature reveal">
+          <div class="feature__icon" aria-hidden="true">◈</div>
+          <h3 class="feature__title">Audit-ready history</h3>
+          <p class="feature__text">Every decision is timestamped — useful for compliance and for “why did we ship that?”</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pricing with billing toggle -->
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-intro reveal">
+        <h2 class="section-intro__title" id="pricing-title">Simple pricing</h2>
+        <p class="section-intro__text">Start free. Upgrade when your team outgrows the sandbox.</p>
+      </div>
+
+      <div class="billing reveal" role="group" aria-labelledby="billing-label">
+        <span id="billing-label" class="visually-hidden">Billing period</span>
+        <span class="billing__option" data-billing-label="monthly">Monthly</span>
+        <button
+          class="billing__toggle"
+          type="button"
+          role="switch"
+          aria-checked="false"
+          aria-label="Toggle annual billing"
+          data-billing-toggle
+        >
+          <span class="billing__knob" aria-hidden="true"></span>
+        </button>
+        <span class="billing__option" data-billing-label="annual">
+          Annual <span class="billing__save">Save 20%</span>
+        </span>
+      </div>
+
+      <div class="pricing__grid">
+        <article class="plan reveal">
+          <h3 class="plan__name">Starter</h3>
+          <p class="plan__price">
+            <span class="plan__amount" data-price-monthly="0" data-price-annual="0">$0</span>
+            <span class="plan__period">/mo</span>
+          </p>
+          <p class="plan__blurb">For solos exploring Orbit.</p>
+          <ul class="plan__features">
+            <li>1 workspace</li>
+            <li>3 active projects</li>
+            <li>Community support</li>
+          </ul>
+          <a class="btn btn--secondary btn--block" href="#">Get started</a>
+        </article>
+
+        <article class="plan plan--featured reveal">
+          <p class="plan__badge">Most popular</p>
+          <h3 class="plan__name">Team</h3>
+          <p class="plan__price">
+            <span class="plan__amount" data-price-monthly="29" data-price-annual="23">$29</span>
+            <span class="plan__period">/mo</span>
+          </p>
+          <p class="plan__blurb">For product squads shipping weekly.</p>
+          <ul class="plan__features">
+            <li>Unlimited projects</li>
+            <li>Signal inbox + themes</li>
+            <li>Priority support</li>
+            <li>SSO (SAML)</li>
+          </ul>
+          <a class="btn btn--primary btn--block" href="#">Start free trial</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan__name">Scale</h3>
+          <p class="plan__price">
+            <span class="plan__amount" data-price-monthly="79" data-price-annual="63">$79</span>
+            <span class="plan__period">/mo</span>
+          </p>
+          <p class="plan__blurb">For orgs with multiple product lines.</p>
+          <ul class="plan__features">
+            <li>Everything in Team</li>
+            <li>Custom roles &amp; audit logs</li>
+            <li>Dedicated CSM</li>
+            <li>SLA 99.9%</li>
+          </ul>
+          <a class="btn btn--secondary btn--block" href="#">Talk to sales</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ accordion -->
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-intro reveal">
+        <h2 class="section-intro__title" id="faq-title">Questions, answered</h2>
+        <p class="section-intro__text">Straight answers before you book a call.</p>
+      </div>
+
+      <div class="accordion reveal" data-accordion>
+        <div class="accordion__item">
+          <h3>
+            <button
+              class="accordion__trigger"
+              type="button"
+              id="faq-btn-1"
+              aria-expanded="false"
+              aria-controls="faq-panel-1"
+            >
+              Can I import from Jira or Linear?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+            <p>Yes. Native importers map projects, statuses, and assignees. You can keep both tools in sync during a trial period.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button
+              class="accordion__trigger"
+              type="button"
+              id="faq-btn-2"
+              aria-expanded="false"
+              aria-controls="faq-panel-2"
+            >
+              Is there a free trial on paid plans?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+            <p>Team and Scale include a 14-day trial. No card required until you convert.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button
+              class="accordion__trigger"
+              type="button"
+              id="faq-btn-3"
+              aria-expanded="false"
+              aria-controls="faq-panel-3"
+            >
+              Where is customer data hosted?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+            <p>US and EU regions are available. Scale customers can request a dedicated VPC and custom retention policies.</p>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button
+              class="accordion__trigger"
+              type="button"
+              id="faq-btn-4"
+              aria-expanded="false"
+              aria-controls="faq-panel-4"
+            >
+              Do you offer nonprofit or education pricing?
+              <span class="accordion__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+            <p>Yes — 40% off Team for verified nonprofits and accredited education teams. Contact sales with your domain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a class="logo" href="index.html">
+          <span class="logo__orb" aria-hidden="true"></span>
+          Orbit
+        </a>
+        <p class="footer__tagline">Product ops without the spreadsheet sprawl.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="../index.html">PixelPro</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Orbit. PixelPro demo — not a real product.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
