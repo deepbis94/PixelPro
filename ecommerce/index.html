@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Meridian — ecommerce product listing demo by PixelPro.">
+  <title>Meridian Shop — PixelPro Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Meridian home">Meridian</a>
+
+      <div class="header__actions">
+        <button
+          class="filter-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="filters"
+          data-filter-toggle
+        >
+          Filters
+        </button>
+
+        <a class="cart" href="cart.html" aria-label="Cart, 0 items" data-cart-btn>
+          <svg class="cart__icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M6 6h15l-1.5 9h-12z"/>
+            <circle cx="9" cy="20" r="1.25"/>
+            <circle cx="18" cy="20" r="1.25"/>
+            <path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="cart__badge" data-cart-badge aria-hidden="true">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="shop">
+    <div class="shop__layout">
+      <!-- Sidebar filters -->
+      <aside class="filters" id="filters" data-filters aria-label="Product filters">
+        <div class="filters__head">
+          <h2 class="filters__title">Filter</h2>
+          <button class="filters__close" type="button" data-filter-close aria-label="Close filters">&times;</button>
+        </div>
+
+        <fieldset class="filter-group">
+          <legend class="filter-group__legend">Category</legend>
+          <label class="filter-option">
+            <input type="checkbox" name="category" value="bags" data-filter="category">
+            <span>Bags</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" name="category" value="apparel" data-filter="category">
+            <span>Apparel</span>
+          </label>
+          <label class="filter-option">
+            <input type="checkbox" name="category" value="home" data-filter="category">
+            <span>Home</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend class="filter-group__legend">Price</legend>
+          <label class="filter-option">
+            <input type="radio" name="price" value="all" data-filter="price" checked>
+            <span>All</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="price" value="under-50" data-filter="price">
+            <span>Under $50</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="price" value="50-100" data-filter="price">
+            <span>$50 – $100</span>
+          </label>
+          <label class="filter-option">
+            <input type="radio" name="price" value="over-100" data-filter="price">
+            <span>Over $100</span>
+          </label>
+        </fieldset>
+
+        <button class="btn btn--ghost" type="button" data-filter-reset>Reset filters</button>
+      </aside>
+
+      <div class="shop__main">
+        <header class="shop__intro reveal">
+          <p class="shop__brand">Meridian</p>
+          <h1 class="shop__title">Curated essentials</h1>
+          <p class="shop__count" data-result-count aria-live="polite">8 products</p>
+        </header>
+
+        <!-- Product grid: 4 cols → 2 → 1 -->
+        <ul class="product-grid" data-product-grid>
+          <li class="product reveal"
+              data-id="1"
+              data-category="bags"
+              data-price="128"
+              data-name="Canvas Weekender"
+              data-image="../assets/shop/weekender.jpg"
+              data-desc="Heavyweight canvas with leather straps and a wipeable liner. Built for overnight trips.">
+            <a class="product__hit" href="product.html?id=1">
+              <div class="product__media">
+                <img src="../assets/shop/weekender.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Canvas Weekender</h2>
+                <p class="product__category">Bags</p>
+                <p class="product__price">$128</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="2"
+              data-category="apparel"
+              data-price="64"
+              data-name="Wool Field Shirt"
+              data-image="../assets/shop/shirt.jpg"
+              data-desc="Brushed merino blend with corozo buttons. Soft enough for travel, sturdy enough for work.">
+            <a class="product__hit" href="product.html?id=2">
+              <div class="product__media">
+                <img src="../assets/shop/shirt.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Wool Field Shirt</h2>
+                <p class="product__category">Apparel</p>
+                <p class="product__price">$64</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="3"
+              data-category="home"
+              data-price="42"
+              data-name="Stoneware Mug Set"
+              data-image="../assets/shop/mugs.jpg"
+              data-desc="Set of two handmade mugs with a speckled glaze. Dishwasher safe.">
+            <a class="product__hit" href="product.html?id=3">
+              <div class="product__media">
+                <img src="../assets/shop/mugs.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Stoneware Mug Set</h2>
+                <p class="product__category">Home</p>
+                <p class="product__price">$42</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="4"
+              data-category="bags"
+              data-price="86"
+              data-name="Crossbody Sling"
+              data-image="../assets/shop/sling.jpg"
+              data-desc="Water-resistant nylon with a hidden zip pocket and adjustable webbing strap.">
+            <a class="product__hit" href="product.html?id=4">
+              <div class="product__media">
+                <img src="../assets/shop/sling.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Crossbody Sling</h2>
+                <p class="product__category">Bags</p>
+                <p class="product__price">$86</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="5"
+              data-category="apparel"
+              data-price="38"
+              data-name="Organic Tee"
+              data-image="../assets/shop/tee.jpg"
+              data-desc="Midweight cotton jersey with a relaxed shoulder. Pre-washed to minimize shrink.">
+            <a class="product__hit" href="product.html?id=5">
+              <div class="product__media">
+                <img src="../assets/shop/tee.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Organic Tee</h2>
+                <p class="product__category">Apparel</p>
+                <p class="product__price">$38</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="6"
+              data-category="home"
+              data-price="54"
+              data-name="Linen Throw"
+              data-image="../assets/shop/throw.jpg"
+              data-desc="Stonewashed Belgian linen, 50×70. Softens with every wash.">
+            <a class="product__hit" href="product.html?id=6">
+              <div class="product__media">
+                <img src="../assets/shop/throw.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Linen Throw</h2>
+                <p class="product__category">Home</p>
+                <p class="product__price">$54</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="7"
+              data-category="apparel"
+              data-price="118"
+              data-name="Utility Overshirt"
+              data-image="../assets/shop/overshirt.jpg"
+              data-desc="Garment-dyed cotton twill with dual chest pockets and horn buttons.">
+            <a class="product__hit" href="product.html?id=7">
+              <div class="product__media">
+                <img src="../assets/shop/overshirt.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Utility Overshirt</h2>
+                <p class="product__category">Apparel</p>
+                <p class="product__price">$118</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+
+          <li class="product reveal"
+              data-id="8"
+              data-category="home"
+              data-price="72"
+              data-name="Cedar Desk Tray"
+              data-image="../assets/shop/tray.jpg"
+              data-desc="Solid cedar catchall with a felt base. Holds keys, pens, and daily carry.">
+            <a class="product__hit" href="product.html?id=8">
+              <div class="product__media">
+                <img src="../assets/shop/tray.jpg" alt="" width="400" height="500" loading="lazy" decoding="async">
+              </div>
+              <div class="product__meta">
+                <h2 class="product__name">Cedar Desk Tray</h2>
+                <p class="product__category">Home</p>
+                <p class="product__price">$72</p>
+              </div>
+            </a>
+            <button class="btn btn--add" type="button" data-add-cart>Add to cart</button>
+          </li>
+        </ul>
+
+        <p class="shop__empty" data-empty hidden>No products match these filters.</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="sr-status" role="status" aria-live="polite" data-status></div>
+
+  <footer class="footer">
+    <p><strong>Meridian</strong> — PixelPro ecommerce demo. Photos via <a href="https://unsplash.com" rel="noopener noreferrer">Unsplash</a>.</p>
+    <a href="../index.html">Back to PixelPro</a>
+  </footer>
+
+  <script src="js/catalog.js"></script>
+  <script src="js/cart-store.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
