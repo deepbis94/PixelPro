@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Meridian order confirmation — PixelPro ecommerce demo.">
+  <title>Thank you — Meridian | PixelPro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Meridian home">Meridian</a>
+      <div class="header__actions">
+        <a class="header__link" href="index.html">Shop</a>
+        <a class="cart" href="cart.html" aria-label="Cart, 0 items" data-cart-btn>
+          <svg class="cart__icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M6 6h15l-1.5 9h-12z"/>
+            <circle cx="9" cy="20" r="1.25"/>
+            <circle cx="18" cy="20" r="1.25"/>
+            <path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="cart__badge" data-cart-badge aria-hidden="true">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <section class="thanks reveal" data-thanks>
+      <p class="thanks__eyebrow">Order confirmed</p>
+      <h1 class="thanks__title">Thank you.</h1>
+      <p class="thanks__text">
+        Your demo order <strong data-order-id>#MRD-0000</strong> is in.
+        Nothing was charged — this is a PixelPro checkout simulation.
+      </p>
+      <p class="thanks__meta" data-order-meta></p>
+      <ul class="thanks__items" data-order-items></ul>
+      <div class="thanks__actions">
+        <a class="btn btn--primary" href="index.html">Back to shop</a>
+        <a class="btn btn--ghost" href="../index.html">PixelPro hub</a>
+      </div>
+    </section>
+
+    <section class="thanks thanks--empty" data-thanks-empty hidden>
+      <h1 class="thanks__title">No order to show</h1>
+      <p class="thanks__text">Complete checkout to see a confirmation here.</p>
+      <a class="btn btn--primary" href="index.html">Shop Meridian</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Meridian</strong> — PixelPro ecommerce demo. Photos via <a href="https://unsplash.com" rel="noopener noreferrer">Unsplash</a>.</p>
+    <a href="../index.html">Back to PixelPro</a>
+  </footer>
+
+  <script src="js/cart-store.js"></script>
+  <script src="js/thank-you.js"></script>
+</body>
+</html>
