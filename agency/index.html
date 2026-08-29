@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Studio Kline — creative agency portfolio demo by PixelPro.">
+  <title>Studio Kline — Creative Agency | PixelPro Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="index.html" aria-label="Studio Kline home">Kline</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="agency-nav"
+        data-nav-toggle
+      >
+        <span class="visually-hidden">Menu</span>
+        <span class="nav-toggle__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="agency-nav" data-nav aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#work">Work</a></li>
+          <li><a class="nav__link" href="#approach">Approach</a></li>
+          <li><a class="nav__link" href="#stats">Impact</a></li>
+          <li><a class="nav__link nav__link--accent" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-brand">
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__brand" id="hero-brand">Studio Kline</p>
+        <h1 class="hero__title">Design that holds under pressure.</h1>
+        <p class="hero__text">
+          Brand systems, digital products, and campaigns for teams who care how every pixel lands.
+        </p>
+        <a class="btn btn--accent" href="#work">View selected work</a>
+      </div>
+    </section>
+
+    <!-- Masonry portfolio -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head reveal">
+        <h2 class="section-head__title" id="work-title">Selected work</h2>
+        <p class="section-head__text">A cross-section of identity, product, and motion.</p>
+      </div>
+
+      <ul class="masonry">
+        <li class="masonry__item masonry__item--tall reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/transit.jpg" alt="" width="600" height="900" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Northline Transit</h3>
+            <p class="project__meta">Identity · Wayfinding</p>
+          </article>
+        </li>
+        <li class="masonry__item reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/finance.jpg" alt="" width="600" height="400" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Halo Finance</h3>
+            <p class="project__meta">Product UI</p>
+          </article>
+        </li>
+        <li class="masonry__item masonry__item--wide reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/records.jpg" alt="" width="900" height="500" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Atlas Records</h3>
+            <p class="project__meta">Campaign · Motion</p>
+          </article>
+        </li>
+        <li class="masonry__item reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/packaging.jpg" alt="" width="600" height="800" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Field Notes Co.</h3>
+            <p class="project__meta">Packaging</p>
+          </article>
+        </li>
+        <li class="masonry__item masonry__item--tall reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/health.jpg" alt="" width="600" height="900" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Lumen Health</h3>
+            <p class="project__meta">Digital product</p>
+          </article>
+        </li>
+        <li class="masonry__item reveal">
+          <article class="project">
+            <div class="project__visual">
+              <img src="../assets/agency/brand.jpg" alt="" width="600" height="800" loading="lazy" decoding="async">
+            </div>
+            <h3 class="project__title">Copper &amp; Oak</h3>
+            <p class="project__meta">Brand system</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Alternating sections -->
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+      <h2 class="visually-hidden" id="approach-title">Approach</h2>
+
+      <article class="split split--image-left reveal">
+        <div class="split__media">
+          <img src="../assets/agency/discover.jpg" alt="" width="800" height="533" loading="lazy" decoding="async">
+        </div>
+        <div class="split__copy">
+          <p class="split__eyebrow">01 — Discover</p>
+          <h3 class="split__title">Listen before we draw.</h3>
+          <p class="split__text">
+            Workshops, audits, and competitive maps that surface constraints early — so the work solves the real problem, not the assumed one.
+          </p>
+        </div>
+      </article>
+
+      <article class="split split--image-right reveal">
+        <div class="split__copy">
+          <p class="split__eyebrow">02 — Shape</p>
+          <h3 class="split__title">Systems over one-offs.</h3>
+          <p class="split__text">
+            Type, color, components, and motion rules that scale across product and marketing without losing the brand’s edge.
+          </p>
+        </div>
+        <div class="split__media">
+          <img src="../assets/agency/shape.jpg" alt="" width="800" height="533" loading="lazy" decoding="async">
+        </div>
+      </article>
+
+      <article class="split split--image-left reveal">
+        <div class="split__media">
+          <img src="../assets/agency/ship.jpg" alt="" width="800" height="533" loading="lazy" decoding="async">
+        </div>
+        <div class="split__copy">
+          <p class="split__eyebrow">03 — Ship</p>
+          <h3 class="split__title">Hand-off that holds up.</h3>
+          <p class="split__text">
+            Specs, tokens, and prototypes engineers actually use — plus a launch review so nothing drifts between Figma and production.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Stats counter -->
+    <section class="stats" id="stats" aria-labelledby="stats-title">
+      <div class="stats__inner reveal">
+        <h2 class="stats__title" id="stats-title">Impact in numbers</h2>
+        <ul class="stats__grid">
+          <li class="stat">
+            <p class="stat__value" data-count="120" data-suffix="+">0</p>
+            <p class="stat__label">Projects shipped</p>
+          </li>
+          <li class="stat">
+            <p class="stat__value" data-count="18" data-suffix="">0</p>
+            <p class="stat__label">Countries reached</p>
+          </li>
+          <li class="stat">
+            <p class="stat__value" data-count="96" data-suffix="%">0</p>
+            <p class="stat__label">Client retention</p>
+          </li>
+          <li class="stat">
+            <p class="stat__value" data-count="9" data-suffix="">0</p>
+            <p class="stat__label">Years in studio</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__inner">
+        <div class="contact__intro reveal">
+          <h2 class="contact__title" id="contact-title">Start a project</h2>
+          <p class="contact__text">Tell us what you’re building. We’ll reply within two business days.</p>
+        </div>
+
+        <form class="form reveal" data-contact-form novalidate>
+          <div class="form__row">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__input" type="text" id="name" name="name" autocomplete="name" required>
+            <p class="form__error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" autocomplete="email" required>
+            <p class="form__error" id="email-error" hidden>Enter a valid email address.</p>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="budget">Budget</label>
+            <select class="form__input" id="budget" name="budget">
+              <option value="">Select a range</option>
+              <option value="20-50">$20k – $50k</option>
+              <option value="50-100">$50k – $100k</option>
+              <option value="100+">$100k+</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <label class="form__label" for="message">Project notes</label>
+            <textarea class="form__input form__input--area" id="message" name="message" rows="5" required></textarea>
+            <p class="form__error" id="message-error" hidden>Add a short project description.</p>
+          </div>
+
+          <button class="btn btn--accent" type="submit">Send message</button>
+          <p class="form__success" role="status" aria-live="polite" data-form-success hidden>
+            Thanks — your message is ready (demo only; nothing was sent).
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__brand">Studio Kline</p>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="../index.html">PixelPro</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 Studio Kline. PixelPro demo. Photos via <a href="https://unsplash.com" rel="noopener noreferrer">Unsplash</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
